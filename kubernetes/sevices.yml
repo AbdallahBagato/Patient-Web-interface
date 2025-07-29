@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: patient-web-interface-service
+spec:
+  selector:
+    app: patient-web-interface
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP

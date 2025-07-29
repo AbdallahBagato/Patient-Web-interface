@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: patient-web-interface-deployment
+  labels:
+    app: patient-web-interface
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: patient-web-interface
+  template:
+    metadata:
+      labels:
+        app: patient-web-interface
+    spec:
+      containers:
+      - name: patient-web-interface
+        image: matemzitmatem/cicd:latest
+        ports:
+        - containerPort: 8000

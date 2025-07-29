@@ -1,4 +1,6 @@
 
+# check master branche 
+-------------------------------
 # Patient Management System  
 
 A simple **Flask-based web application** to manage patient records. The system allows users to **sign up** with their details and **search for patient records** using a National ID. Data is stored in a **SQLite database**.
